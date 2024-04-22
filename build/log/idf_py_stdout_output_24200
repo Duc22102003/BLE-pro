@@ -1,0 +1,859 @@
+e;32mI (40) boot.esp32: SPI�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a8a4h (108708) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8cc vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f220 vaddr=40080000 size=00df8h (  3576) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=65050h (413776) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095078 vaddr=40080df8 size=181a4h ( 98724) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  a292aca4d...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1182) GAP: event: 10[0m
+[0;32mI (1192) main_task: Returned from app_main()[0m
+[0;32mI (1202) GAP: Discovery started.[0m
+[0;32mI (1762) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (1772) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (1772) GAP: --RSSI: -50[0m
+[0;32mI (1772) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (1782) GAP: Cancel device discovery ...[0m
+[0;32mI (1782) GAP: Device discovery stopped.[0m
+[0;32mI (1782) GAP: Discover services ...[0m
+[0;32mI (2192) GAP: event: 10[0m
+[0;32mI (3192) GAP: event: 10[0m
+[0;33mW (3502) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (3512) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (3522) GAP: event: 16[0m
+[0;32mI (4202) GAP: event: 10[0m
+[0;32mI (4202) GAP: Discovery started.[0m
+[0;32mI (5192) GAP: event: 10[0m
+[0;32mI (6192) GAP: event: 10[0m
+[0;32mI (7002) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (7002) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (7002) GAP: --RSSI: -39[0m
+[0;32mI (7002) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (7012) GAP: Cancel device discovery ...[0m
+[0;32mI (7022) GAP: Device discovery stopped.[0m
+[0;32mI (7022) GAP: Discover services ...[0m
+[0;32mI (7022) GAP: Device discovery stopped.[0m
+[0;32mI (7032) GAP: Device discovery stopped.[0m
+[0;32mI (7202) GAP: event: 10[0m
+[0;32mI (8202) GAP: event: 10[0m
+[0;32mI (8202) GAP: Discovery started.[0m
+[0;32mI (9192) GAP: event: 10[0m
+[0;32mI (10192) GAP: event: 10[0m
+[0;32mI (10922) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (10922) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (10922) GAP: --RSSI: -42[0m
+[0;32mI (10922) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (10932) GAP: Cancel device discovery ...[0m
+[0;32mI (10942) GAP: Device discovery stopped.[0m
+[0;32mI (10942) GAP: Discover services ...[0m
+[0;32mI (10942) GAP: Device discovery stopped.[0m
+[0;32mI (10952) GAP: Device discovery stopped.[0m
+[0;32mI (11082) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (11082) GAP: --110a[0m
+[0;32mI (11082) GAP: --1105[0m
+[0;32mI (11082) GAP: --1115[0m
+[0;32mI (11082) GAP: --1116[0m
+[0;32mI (11092) GAP: --110e[0m
+[0;32mI (11092) GAP: --112f[0m
+[0;32mI (11092) GAP: --1112[0m
+[0;32mI (11102) GAP: --111f[0m
+[0;32mI (11102) GAP: --1132[0m
+[0;32mI (11202) GAP: event: 10[0m
+[0;32mI (11202) GAP: Discovery started.[0m
+[0;32mI (11512) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (11512) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (11512) GAP: --RSSI: -42[0m
+[0;32mI (11512) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (11522) GAP: Cancel device discovery ...[0m
+[0;32mI (11532) GAP: Device discovery stopped.[0m
+[0;32mI (11532) GAP: Discover services ...[0m
+[0;32mI (11702) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (11702) GAP: --110a[0m
+[0;32mI (11702) GAP: --1105[0m
+[0;32mI (11702) GAP: --1115[0m
+[0;32mI (11702) GAP: --1116[0m
+[0;32mI (11702) GAP: --110e[0m
+[0;32mI (11712) GAP: --112f[0m
+[0;32mI (11712) GAP: --1112[0m
+[0;32mI (11712) GAP: --111f[0m
+[0;32mI (11722) GAP: --1132[0m
+[0;32mI (12202) GAP: event: 10[0m
+[0;32mI (12202) GAP: Discovery started.[0m
+[0;32mI (12292) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (12292) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (12292) GAP: --RSSI: -35[0m
+[0;32mI (12292) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (12302) GAP: Cancel device discovery ...[0m
+[0;32mI (12312) GAP: Device discovery stopped.[0m
+[0;32mI (12312) GAP: Discover services ...[0m
+[0;32mI (12512) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (12512) GAP: --110a[0m
+[0;32mI (12512) GAP: --1105[0m
+[0;32mI (12512) GAP: --1115[0m
+[0;32mI (12512) GAP: --1116[0m
+[0;32mI (12512) GAP: --110e[0m
+[0;32mI (12522) GAP: --112f[0m
+[0;32mI (12522) GAP: --1112[0m
+[0;32mI (12522) GAP: --111f[0m
+[0;32mI (12532) GAP: --1132[0m
+[0;32mI (13202) GAP: event: 10[0m
+[0;32mI (13202) GAP: Discovery started.[0m
+[0;32mI (13622) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (13622) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (13632) GAP: --RSSI: -40[0m
+[0;32mI (13632) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (13632) GAP: Cancel device discovery ...[0m
+[0;32mI (13642) GAP: Device discovery stopped.[0m
+[0;32mI (13642) GAP: Discover services ...[0m
+[0;32mI (13862) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (13862) GAP: --110a[0m
+[0;32mI (13862) GAP: --1105[0m
+[0;32mI (13862) GAP: --1115[0m
+[0;32mI (13862) GAP: --1116[0m
+[0;32mI (13872) GAP: --110e[0m
+[0;32mI (13872) GAP: --112f[0m
+[0;32mI (13872) GAP: --1112[0m
+[0;32mI (13882) GAP: --111f[0m
+[0;32mI (13882) GAP: --1132[0m
+[0;32mI (14202) GAP: event: 10[0m
+[0;32mI (14202) GAP: Discovery started.[0m
+[0;32mI (15192) GAP: event: 10[0m
+[0;32mI (16192) GAP: event: 10[0m
+[0;32mI (16252) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (16252) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (16252) GAP: --RSSI: -34[0m
+[0;32mI (16252) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (16262) GAP: Cancel device discovery ...[0m
+[0;32mI (16262) GAP: Device discovery stopped.[0m
+[0;32mI (16272) GAP: Discover services ...[0m
+[0;32mI (16272) GAP: Device discovery stopped.[0m
+[0;32mI (16282) GAP: Device discovery stopped.[0m
+[0;32mI (16392) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (16392) GAP: --110a[0m
+[0;32mI (16392) GAP: --1105[0m
+[0;32mI (16392) GAP: --1115[0m
+[0;32mI (16392) GAP: --1116[0m
+[0;32mI (16392) GAP: --110e[0m
+[0;32mI (16402) GAP: --112f[0m
+[0;32mI (16402) GAP: --1112[0m
+[0;32mI (16402) GAP: --111f[0m
+[0;32mI (16412) GAP: --1132[0m
+[0;32mI (17202) GAP: event: 10[0m
+[0;32mI (17202) GAP: Discovery started.[0m
+[0;32mI (17602) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (17602) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (17602) GAP: --RSSI: -34[0m
+[0;32mI (17602) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (17612) GAP: Cancel device discovery ...[0m
+[0;32mI (17612) GAP: Device discovery stopped.[0m
+[0;32mI (17622) GAP: Discover services ...[0m
+[0;32mI (17932) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (17932) GAP: --110a[0m
+[0;32mI (17932) GAP: --1105[0m
+[0;32mI (17932) GAP: --1115[0m
+[0;32mI (17942) GAP: --1116[0m
+[0;32mI (17942) GAP: --110e[0m
+[0;32mI (17942) GAP: --112f[0m
+[0;32mI (17952) GAP: --1112[0m
+[0;32mI (17952) GAP: --111f[0m
+[0;32mI (17952) GAP: --1132[0m
+[0;32mI (18202) GAP: event: 10[0m
+[0;32mI (18202) GAP: Discovery started.[0m
+[0;32mI (19192) GAP: event: 10[0m
+[0;32mI (20192) GAP: event: 10[0m
+[0;32mI (21192) GAP: event: 10[0m
+[0;32mI (21442) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (21442) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (21442) GAP: --RSSI: -34[0m
+[0;32mI (21442) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (21452) GAP: Cancel device discovery ...[0m
+[0;32mI (21462) GAP: Device discovery stopped.[0m
+[0;32mI (21462) GAP: Discover services ...[0m
+[0;32mI (21462) GAP: Device discovery stopped.[0m
+[0;32mI (21472) GAP: Device discovery stopped.[0m
+[0;32mI (21652) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (21652) GAP: --110a[0m
+[0;32mI (21652) GAP: --1105[0m
+[0;32mI (21652) GAP: --1115[0m
+[0;32mI (21662) GAP: --1116[0m
+[0;32mI (21662) GAP: --110e[0m
+[0;32mI (21662) GAP: --112f[0m
+[0;32mI (21672) GAP: --1112[0m
+[0;32mI (21672) GAP: --111f[0m
+[0;32mI (21672) GAP: --1132[0m
+[0;32mI (22202) GAP: event: 10[0m
+[0;32mI (22202) GAP: Discovery started.[0m
+[0;32mI (22712) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (22712) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (22712) GAP: --RSSI: -41[0m
+[0;32mI (22712) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (22722) GAP: Cancel device discovery ...[0m
+[0;32mI (22732) GAP: Device discovery stopped.[0m
+[0;32mI (22732) GAP: Discover services ...[0m
+[0;32mI (22882) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (22882) GAP: --110a[0m
+[0;32mI (22882) GAP: --1105[0m
+[0;32mI (22882) GAP: --1115[0m
+[0;32mI (22882) GAP: --1116[0m
+[0;32mI (22882) GAP: --110e[0m
+[0;32mI (22892) GAP: --112f[0m
+[0;32mI (22892) GAP: --1112[0m
+[0;32mI (22892) GAP: --111f[0m
+[0;32mI (22902) GAP: --1132[0m
+[0;32mI (23202) GAP: event: 10[0m
+[0;32mI (23202) GAP: Discovery started.[0m
+[0;32mI (24192) GAP: event: 10[0m
+[0;32mI (25192) GAP: event: 10[0m
+[0;32mI (25422) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (25422) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (25422) GAP: --RSSI: -40[0m
+[0;32mI (25432) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (25432) GAP: Cancel device discovery ...[0m
+[0;32mI (25442) GAP: Device discovery stopped.[0m
+[0;32mI (25442) GAP: Discover services ...[0m
+[0;32mI (25452) GAP: Device discovery stopped.[0m
+[0;32mI (25452) GAP: Device discovery stopped.[0m
+[0;32mI (25622) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (25622) GAP: --110a[0m
+[0;32mI (25622) GAP: --1105[0m
+[0;32mI (25622) GAP: --1115[0m
+[0;32mI (25622) GAP: --1116[0m
+[0;32mI (25632) GAP: --110e[0m
+[0;32mI (25632) GAP: --112f[0m
+[0;32mI (25632) GAP: --1112[0m
+[0;32mI (25632) GAP: --111f[0m
+[0;32mI (25642) GAP: --1132[0m
+[0;32mI (26202) GAP: event: 10[0m
+[0;32mI (26202) GAP: Discovery started.[0m
+[0;32mI (27192) GAP: event: 10[0m
+[0;32mI (28192) GAP: event: 10[0m
+[0;32mI (29192) GAP: event: 10[0m
+[0;32mI (29222) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (29222) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (29222) GAP: --RSSI: -34[0m
+[0;32mI (29222) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (29232) GAP: Cancel device discovery ...[0m
+[0;32mI (29232) GAP: Device discovery stopped.[0m
+[0;32mI (29242) GAP: Discover services ...[0m
+[0;32mI (29242) GAP: Device discovery stopped.[0m
+[0;32mI (29242) GAP: Device discovery stopped.[0m
+[0;32mI (29442) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (29442) GAP: --110a[0m
+[0;32mI (29442) GAP: --1105[0m
+[0;32mI (29442) GAP: --1115[0m
+[0;32mI (29442) GAP: --1116[0m
+[0;32mI (29452) GAP: --110e[0m
+[0;32mI (29452) GAP: --112f[0m
+[0;32mI (29452) GAP: --1112[0m
+[0;32mI (29452) GAP: --111f[0m
+[0;32mI (29462) GAP: --1132[0m
+[0;32mI (30202) GAP: event: 10[0m
+[0;32mI (30202) GAP: Discovery started.[0m
+[0;32mI (31192) GAP: event: 10[0m
+[0;32mI (31902) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (31902) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (31902) GAP: --RSSI: -33[0m
+[0;32mI (31902) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (31912) GAP: Cancel device discovery ...[0m
+[0;32mI (31922) GAP: Device discovery stopped.[0m
+[0;32mI (31922) GAP: Discover services ...[0m
+[0;32mI (31922) GAP: Device discovery stopped.[0m
+[0;32mI (31932) GAP: Device discovery stopped.[0m
+[0;32mI (32042) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (32042) GAP: --110a[0m
+[0;32mI (32042) GAP: --1105[0m
+[0;32mI (32042) GAP: --1115[0m
+[0;32mI (32052) GAP: --1116[0m
+[0;32mI (32052) GAP: --110e[0m
+[0;32mI (32052) GAP: --112f[0m
+[0;32mI (32062) GAP: --1112[0m
+[0;32mI (32062) GAP: --111f[0m
+[0;32mI (32062) GAP: --1132[0m
+[0;32mI (32202) GAP: event: 10[0m
+[0;32mI (32202) GAP: Discovery started.[0m
+[0;32mI (33062) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (33062) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (33062) GAP: --RSSI: -33[0m
+[0;32mI (33062) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (33072) GAP: Cancel device discovery ...[0m
+[0;32mI (33082) GAP: Device discovery stopped.[0m
+[0;32mI (33082) GAP: Discover services ...[0m
+[0;32mI (33192) GAP: event: 10[0m
+[0;32mI (34202) GAP: event: 10[0m
+[0;32mI (34202) GAP: Discovery started.[0m
+[0;32mI (34292) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (34292) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (34292) GAP: --RSSI: -34[0m
+[0;32mI (34292) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (34302) GAP: Cancel device discovery ...[0m
+[0;32mI (34312) GAP: Device discovery stopped.[0m
+[0;32mI (34312) GAP: Discover services ...[0m
+[0;32mI (34542) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (34542) GAP: --110a[0m
+[0;32mI (34542) GAP: --1105[0m
+[0;32mI (34542) GAP: --1115[0m
+[0;32mI (34542) GAP: --1116[0m
+[0;32mI (34542) GAP: --110e[0m
+[0;32mI (34552) GAP: --112f[0m
+[0;32mI (34552) GAP: --1112[0m
+[0;32mI (34552) GAP: --111f[0m
+[0;32mI (34562) GAP: --1132[0m
+[0;32mI (35202) GAP: event: 10[0m
+[0;32mI (35202) GAP: Discovery started.[0m
+[0;32mI (36192) GAP: event: 10[0m
+[0;32mI (36902) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (36902) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (36902) GAP: --RSSI: -34[0m
+[0;32mI (36902) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (36912) GAP: Cancel device discovery ...[0m
+[0;32mI (36922) GAP: Device discovery stopped.[0m
+[0;32mI (36922) GAP: Discover services ...[0m
+[0;32mI (36922) GAP: Device discovery stopped.[0m
+[0;32mI (36932) GAP: Device discovery stopped.[0m
+[0;32mI (37072) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (37072) GAP: --110a[0m
+[0;32mI (37072) GAP: --1105[0m
+[0;32mI (37072) GAP: --1115[0m
+[0;32mI (37082) GAP: --1116[0m
+[0;32mI (37082) GAP: --110e[0m
+[0;32mI (37082) GAP: --112f[0m
+[0;32mI (37082) GAP: --1112[0m
+[0;32mI (37092) GAP: --111f[0m
+[0;32mI (37092) GAP: --1132[0m
+[0;32mI (37202) GAP: event: 10[0m
+[0;32mI (37202) GAP: Discovery started.[0m
+[0;32mI (38152) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (38152) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (38152) GAP: --RSSI: -39[0m
+[0;32mI (38162) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (38162) GAP: Cancel device discovery ...[0m
+[0;32mI (38172) GAP: Device discovery stopped.[0m
+[0;32mI (38172) GAP: Discover services ...[0m
+[0;32mI (38202) GAP: event: 10[0m
+[0;33mW (38912) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (38912) GAP: event: 17[0m
+[0;32mI (39192) GAP: event: 10[0m
+[0;32mI (39202) GAP: Discovery started.[0m
+[0;32mI (40192) GAP: event: 10[0m
+[0;32mI (41192) GAP: event: 10[0m
+[0;32mI (42192) GAP: event: 10[0m
+[0;32mI (43192) GAP: event: 10[0m
+[0;32mI (44192) GAP: event: 10[0m
+[0;32mI (45192) GAP: event: 10[0m
+[0;32mI (46192) GAP: event: 10[0m
+[0;32mI (47192) GAP: event: 10[0m
+[0;32mI (48192) GAP: event: 10[0m
+[0;32mI (49192) GAP: event: 10[0m
+[0;32mI (50192) GAP: event: 10[0m
+[0;32mI (51192) GAP: event: 10[0m
+[0;32mI (52012) GAP: Device discovery stopped.[0m
+[0;32mI (52192) GAP: event: 10[0m
+[0;32mI (52202) GAP: Discovery started.[0m
+[0;32mI (53192) GAP: event: 10[0m
+[0;32mI (54192) GAP: event: 10[0m
+[0;32mI (55192) GAP: event: 10[0m
+[0;32mI (56192) GAP: event: 10[0m
+[0;32mI (57032) GAP: Device found: f0:39:65:d9:f0:1e[0m
+[0;32mI (57032) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (57032) GAP: --RSSI: -40[0m
+[0;32mI (57032) GAP: Found a target device, address f0:39:65:d9:f0:1e, name A12 của Văn Mừng[0m
+[0;32mI (57042) GAP: Cancel device discovery ...[0m
+[0;32mI (57052) GAP: Device discovery stopped.[0m
+[0;32mI (57052) GAP: Discover services ...[0m
+[0;32mI (57062) GAP: Device discovery stopped.[0m
+[0;32mI (57062) GAP: Device discovery stopped.[0m
+[0;32mI (57192) GAP: event: 10[0m
+[0;32mI (58192) GAP: event: 10[0m
+[0;33mW (58682) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (58682) GAP: event: 16[0m
+[0;32mI (59192) GAP: event: 10[0m
+[0;32mI (59192) GAP: Discovery started.[0m
+[0;32mI (59662) GAP: Device found: f0:39:65:d9:f0:1e[0m
+[0;32mI (59662) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (59662) GAP: --RSSI: -43[0m
+[0;32mI (59662) GAP: Found a target device, address f0:39:65:d9:f0:1e, name A12 của Văn Mừng[0m
+[0;32mI (59672) GAP: Cancel device discovery ...[0m
+[0;32mI (59682) GAP: Device discovery stopped.[0m
+[0;32mI (59682) GAP: Discover services ...[0m
+[0;32mI (59922) GAP: Services for device f0:39:65:d9:f0:1e found[0m
+[0;32mI (59922) GAP: --110a[0m
+[0;32mI (59922) GAP: --1105[0m
+[0;32mI (59922) GAP: --1115[0m
+[0;32mI (59932) GAP: --1116[0m
+[0;32mI (59932) GAP: --112d[0m
+[0;32mI (59932) GAP: --110e[0m
+[0;32mI (59942) GAP: --112f[0m
+[0;32mI (59942) GAP: --1112[0m
+[0;32mI (59942) GAP: --111f[0m
+[0;32mI (59952) GAP: --1132[0m
+[0;32mI (60192) GAP: event: 10[0m
+[0;32mI (60192) GAP: Discovery started.[0m
+[0;32mI (61192) GAP: event: 10[0m
+[0;32mI (62112) GAP: Device found: f0:39:65:d9:f0:1e[0m
+[0;32mI (62112) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (62112) GAP: --RSSI: -39[0m
+[0;32mI (62112) GAP: Found a target device, address f0:39:65:d9:f0:1e, name [0m
+[0;32mI (62122) GAP: Cancel device discovery ...[0m
+[0;32mI (62132) GAP: Device discovery stopped.[0m
+[0;32mI (62132) GAP: Discover services ...[0m
+[0;32mI (62132) GAP: Device discovery stopped.[0m
+[0;32mI (62142) GAP: Device discovery stopped.[0m
+[0;32mI (62192) GAP: event: 10[0m
+[0;32mI (63192) GAP: event: 10[0m
+[0;32mI (63192) GAP: Discovery started.[0m
+[0;32mI (64192) GAP: event: 10[0m
+[0;32mI (64682) GAP: Device found: f0:39:65:d9:f0:1e[0m
+[0;32mI (64682) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (64682) GAP: --RSSI: -34[0m
+[0;32mI (64692) GAP: Found a target device, address f0:39:65:d9:f0:1e, name A12 của Văn Mừng[0m
+[0;32mI (64692) GAP: Cancel device discovery ...[0m
+[0;32mI (64702) GAP: Device discovery stopped.[0m
+[0;32mI (64702) GAP: Discover services ...[0m
+[0;32mI (64712) GAP: Device discovery stopped.[0m
+[0;32mI (64712) GAP: Device discovery stopped.[0m
+[0;32mI (65192) GAP: event: 10[0m
+[0;32mI (66192) GAP: event: 10[0m
+[0;32mI (66192) GAP: Discovery started.[0m
+[0;32mI (67192) GAP: event: 10[0m
+[0;32mI (68122) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (68132) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (68132) GAP: --RSSI: -32[0m
+[0;32mI (68132) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (68142) GAP: Cancel device discovery ...[0m
+[0;32mI (68142) GAP: Device discovery stopped.[0m
+[0;32mI (68142) GAP: Discover services ...[0m
+[0;32mI (68152) GAP: Device discovery stopped.[0m
+[0;32mI (68152) GAP: Device discovery stopped.[0m
+[0;32mI (68192) GAP: event: 10[0m
+[0;32mI (69192) GAP: event: 10[0m
+[0;33mW (69262) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (69422) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x16[0m
+[0;32mI (69422) GAP: event: 17[0m
+[0;32mI (70192) GAP: event: 10[0m
+[0;33mW (70392) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (70402) GAP: event: 16[0m
+[0;32mI (71192) GAP: event: 10[0m
+[0;32mI (71192) GAP: Discovery started.[0m
+[0;32mI (71672) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (71672) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (71672) GAP: --RSSI: -34[0m
+[0;32mI (71672) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (71682) GAP: Cancel device discovery ...[0m
+[0;32mI (71682) GAP: Device discovery stopped.[0m
+[0;32mI (71692) GAP: Discover services ...[0m
+[0;32mI (71822) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (71822) GAP: --110a[0m
+[0;32mI (71822) GAP: --1105[0m
+[0;32mI (71822) GAP: --1115[0m
+[0;32mI (71832) GAP: --1116[0m
+[0;32mI (71832) GAP: --110e[0m
+[0;32mI (71832) GAP: --112f[0m
+[0;32mI (71832) GAP: --1112[0m
+[0;32mI (71842) GAP: --111f[0m
+[0;32mI (71842) GAP: --1132[0m
+[0;32mI (72192) GAP: event: 10[0m
+[0;32mI (72192) GAP: Discovery started.[0m
+[0;32mI (72342) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (72342) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (72342) GAP: --RSSI: -33[0m
+[0;32mI (72342) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (72352) GAP: Cancel device discovery ...[0m
+[0;32mI (72362) GAP: Device discovery stopped.[0m
+[0;32mI (72362) GAP: Discover services ...[0m
+[0;32mI (72652) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (72652) GAP: --110a[0m
+[0;32mI (72652) GAP: --1105[0m
+[0;32mI (72652) GAP: --1115[0m
+[0;32mI (72662) GAP: --1116[0m
+[0;32mI (72662) GAP: --110e[0m
+[0;32mI (72662) GAP: --112f[0m
+[0;32mI (72672) GAP: --1112[0m
+[0;32mI (72672) GAP: --111f[0m
+[0;32mI (72672) GAP: --1132[0m
+[0;32mI (73192) GAP: event: 10[0m
+[0;32mI (73192) GAP: Discovery started.[0m
+[0;32mI (74192) GAP: event: 10[0m
+[0;32mI (75192) GAP: event: 10[0m
+[0;32mI (76192) GAP: event: 10[0m
+[0;32mI (76242) GAP: Device found: a8:43:a4:81:f1:3f[0m
+[0;32mI (76242) GAP: --Class of Device: 0x1c0424[0m
+[0;32mI (76242) GAP: --RSSI: -91[0m
+[0;32mI (76242) GAP: Found a target device, address a8:43:a4:81:f1:3f, name FPT Play 650[0m
+[0;32mI (76252) GAP: Cancel device discovery ...[0m
+[0;32mI (76262) GAP: Device discovery stopped.[0m
+[0;32mI (76262) GAP: Discover services ...[0m
+[0;32mI (76262) GAP: Device discovery stopped.[0m
+[0;32mI (76272) GAP: Device discovery stopped.[0m
+[0;33mW (76652) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (76822) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x16[0m
+[0;32mI (76822) GAP: event: 17[0m
+[0;32mI (77192) GAP: event: 10[0m
+[0;32mI (78192) GAP: event: 10[0m
+[0;33mW (79172) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (79172) GAP: event: 16[0m
+[0;32mI (79192) GAP: event: 10[0m
+[0;32mI (80192) GAP: event: 10[0m
+[0;32mI (80192) GAP: Discovery started.[0m
+[0;32mI (80392) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (80392) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (80392) GAP: --RSSI: -43[0m
+[0;32mI (80392) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (80402) GAP: Cancel device discovery ...[0m
+[0;32mI (80412) GAP: Device discovery stopped.[0m
+[0;32mI (80412) GAP: Discover services ...[0m
+[0;32mI (81192) GAP: event: 10[0m
+[0;32mI (82192) GAP: event: 10[0m
+[0;32mI (83192) GAP: event: 10[0m
+[0;33mW (83592) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (83662) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (83662) GAP: event: 17[0m
+[0;32mI (84192) GAP: event: 10[0m
+[0;33mW (84662) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (84672) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (84692) GAP: event: 16[0m
+[0;32mI (85202) GAP: event: 10[0m
+[0;32mI (85202) GAP: Discovery started.[0m
+[0;32mI (85612) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (85612) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (85612) GAP: --RSSI: -33[0m
+[0;32mI (85622) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (85622) GAP: Cancel device discovery ...[0m
+[0;32mI (85632) GAP: Device discovery stopped.[0m
+[0;32mI (85632) GAP: Discover services ...[0m
+[0;32mI (85992) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (86002) GAP: --110a[0m
+[0;32mI (86002) GAP: --1105[0m
+[0;32mI (86002) GAP: --1115[0m
+[0;32mI (86002) GAP: --1116[0m
+[0;32mI (86002) GAP: --110e[0m
+[0;32mI (86012) GAP: --112f[0m
+[0;32mI (86012) GAP: --1112[0m
+[0;32mI (86012) GAP: --111f[0m
+[0;32mI (86012) GAP: --1132[0m
+[0;32mI (86202) GAP: event: 10[0m
+[0;32mI (86202) GAP: Discovery started.[0m
+[0;32mI (87192) GAP: event: 10[0m
+[0;32mI (88192) GAP: event: 10[0m
+[0;32mI (89192) GAP: event: 10[0m
+[0;32mI (89322) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (89322) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (89322) GAP: --RSSI: -34[0m
+[0;32mI (89322) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (89332) GAP: Cancel device discovery ...[0m
+[0;32mI (89342) GAP: Device discovery stopped.[0m
+[0;32mI (89342) GAP: Discover services ...[0m
+[0;32mI (89342) GAP: Device discovery stopped.[0m
+[0;32mI (89352) GAP: Device discovery stopped.[0m
+[0;32mI (89652) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (89652) GAP: --110a[0m
+[0;32mI (89652) GAP: --1105[0m
+[0;32mI (89652) GAP: --1115[0m
+[0;32mI (89652) GAP: --1116[0m
+[0;32mI (89652) GAP: --110e[0m
+[0;32mI (89662) GAP: --112f[0m
+[0;32mI (89662) GAP: --1112[0m
+[0;32mI (89662) GAP: --111f[0m
+[0;32mI (89672) GAP: --1132[0m
+[0;32mI (90202) GAP: event: 10[0m
+[0;32mI (90202) GAP: Discovery started.[0m
+[0;32mI (91192) GAP: event: 10[0m
+[0;32mI (92192) GAP: event: 10[0m
+[0;32mI (93192) GAP: event: 10[0m
+[0;32mI (93222) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (93222) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (93222) GAP: --RSSI: -40[0m
+[0;32mI (93222) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (93232) GAP: Cancel device discovery ...[0m
+[0;32mI (93242) GAP: Device discovery stopped.[0m
+[0;32mI (93242) GAP: Discover services ...[0m
+[0;32mI (93252) GAP: Device discovery stopped.[0m
+[0;32mI (93252) GAP: Device discovery stopped.[0m
+[0;32mI (93542) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (93552) GAP: --110a[0m
+[0;32mI (93552) GAP: --1105[0m
+[0;32mI (93552) GAP: --1115[0m
+[0;32mI (93552) GAP: --1116[0m
+[0;32mI (93552) GAP: --110e[0m
+[0;32mI (93562) GAP: --112f[0m
+[0;32mI (93562) GAP: --1112[0m
+[0;32mI (93562) GAP: --111f[0m
+[0;32mI (93562) GAP: --1132[0m
+[0;32mI (94202) GAP: event: 10[0m
+[0;32mI (94202) GAP: Discovery started.[0m
+[0;32mI (94382) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (94382) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (94382) GAP: --RSSI: -40[0m
+[0;32mI (94382) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (94392) GAP: Cancel device discovery ...[0m
+[0;32mI (94402) GAP: Device discovery stopped.[0m
+[0;32mI (94402) GAP: Discover services ...[0m
+[0;32mI (94592) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (94592) GAP: --110a[0m
+[0;32mI (94592) GAP: --1105[0m
+[0;32mI (94592) GAP: --1115[0m
+[0;32mI (94592) GAP: --1116[0m
+[0;32mI (94602) GAP: --110e[0m
+[0;32mI (94602) GAP: --112f[0m
+[0;32mI (94602) GAP: --1112[0m
+[0;32mI (94612) GAP: --111f[0m
+[0;32mI (94612) GAP: --1132[0m
+[0;32mI (95202) GAP: event: 10[0m
+[0;32mI (95202) GAP: Discovery started.[0m
+[0;32mI (95692) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (95692) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (95692) GAP: --RSSI: -39[0m
+[0;32mI (95702) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (95702) GAP: Cancel device discovery ...[0m
+[0;32mI (95712) GAP: Device discovery stopped.[0m
+[0;32mI (95712) GAP: Discover services ...[0m
+[0;32mI (95872) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (95872) GAP: --110a[0m
+[0;32mI (95872) GAP: --1105[0m
+[0;32mI (95872) GAP: --1115[0m
+[0;32mI (95882) GAP: --1116[0m
+[0;32mI (95882) GAP: --110e[0m
+[0;32mI (95882) GAP: --112f[0m
+[0;32mI (95892) GAP: --1112[0m
+[0;32mI (95892) GAP: --111f[0m
+[0;32mI (95892) GAP: --1132[0m
+[0;32mI (96202) GAP: event: 10[0m
+[0;32mI (96202) GAP: Discovery started.[0m
+[0;32mI (97192) GAP: event: 10[0m
+[0;32mI (98192) GAP: event: 10[0m
+[0;32mI (99192) GAP: event: 10[0m
+[0;32mI (99572) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (99572) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (99572) GAP: --RSSI: -34[0m
+[0;32mI (99582) GAP: Found a target device, address b0:46:92:e1:37:c0, name [0m
+[0;32mI (99582) GAP: Cancel device discovery ...[0m
+[0;32mI (99592) GAP: Device discovery stopped.[0m
+[0;32mI (99592) GAP: Discover services ...[0m
+[0;32mI (99602) GAP: Device discovery stopped.[0m
+[0;32mI (99602) GAP: Device discovery stopped.[0m
+[0;32mI (99742) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (99742) GAP: --110a[0m
+[0;32mI (99742) GAP: --1105[0m
+[0;32mI (99742) GAP: --1115[0m
+[0;32mI (99752) GAP: --1116[0m
+[0;32mI (99752) GAP: --110e[0m
+[0;32mI (99752) GAP: --112f[0m
+[0;32mI (99762) GAP: --1112[0m
+[0;32mI (99762) GAP: --111f[0m
+[0;32mI (99762) GAP: --1132[0m
+[0;32mI (100202) GAP: event: 10[0m
+[0;32mI (100202) GAP: Discovery started.[0m
+[0;32mI (100792) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (100792) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (100792) GAP: --RSSI: -36[0m
+[0;32mI (100792) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (100802) GAP: Cancel device discovery ...[0m
+[0;32mI (100802) GAP: Device discovery stopped.[0m
+[0;32mI (100812) GAP: Discover services ...[0m
+[0;32mI (100982) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (100982) GAP: --110a[0m
+[0;32mI (100982) GAP: --1105[0m
+[0;32mI (100982) GAP: --1115[0m
+[0;32mI (100992) GAP: --1116[0m
+[0;32mI (100992) GAP: --110e[0m
+[0;32mI (100992) GAP: --112f[0m
+[0;32mI (101002) GAP: --1112[0m
+[0;32mI (101002) GAP: --111f[0m
+[0;32mI (101002) GAP: --1132[0m
+[0;32mI (101202) GAP: event: 10[0m
+[0;32mI (101202) GAP: Discovery started.[0m
+[0;32mI (102192) GAP: event: 10[0m
+[0;32mI (103192) GAP: event: 10[0m
+[0;32mI (103342) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (103342) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (103342) GAP: --RSSI: -36[0m
+[0;32mI (103342) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (103352) GAP: Cancel device discovery ...[0m
+[0;32mI (103362) GAP: Device discovery stopped.[0m
+[0;32mI (103362) GAP: Discover services ...[0m
+[0;32mI (103362) GAP: Device discovery stopped.[0m
+[0;32mI (103372) GAP: Device discovery stopped.[0m
+[0;32mI (103502) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (103502) GAP: --110a[0m
+[0;32mI (103502) GAP: --1105[0m
+[0;32mI (103502) GAP: --1115[0m
+[0;32mI (103502) GAP: --1116[0m
+[0;32mI (103512) GAP: --110e[0m
+[0;32mI (103512) GAP: --112f[0m
+[0;32mI (103512) GAP: --1112[0m
+[0;32mI (103512) GAP: --111f[0m
+[0;32mI (103522) GAP: --1132[0m
+[0;32mI (104202) GAP: event: 10[0m
+[0;32mI (104202) GAP: Discovery started.[0m
+[0;32mI (104612) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (104612) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104612) GAP: --RSSI: -38[0m
+[0;32mI (104612) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (104622) GAP: Cancel device discovery ...[0m
+[0;32mI (104632) GAP: Device discovery stopped.[0m
+[0;32mI (104632) GAP: Discover services ...[0m
+[0;32mI (104822) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (104822) GAP: --110a[0m
+[0;32mI (104822) GAP: --1105[0m
+[0;32mI (104822) GAP: --1115[0m
+[0;32mI (104822) GAP: --1116[0m
+[0;32mI (104822) GAP: --110e[0m
+[0;32mI (104832) GAP: --112f[0m
+[0;32mI (104832) GAP: --1112[0m
+[0;32mI (104832) GAP: --111f[0m
+[0;32mI (104842) GAP: --1132[0m
+[0;32mI (105202) GAP: event: 10[0m
+[0;32mI (105202) GAP: Discovery started.[0m
+[0;32mI (105902) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (105902) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (105902) GAP: --RSSI: -33[0m
+[0;32mI (105902) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (105912) GAP: Cancel device discovery ...[0m
+[0;32mI (105922) GAP: Device discovery stopped.[0m
+[0;32mI (105922) GAP: Discover services ...[0m
+[0;32mI (106192) GAP: event: 10[0m
+[0;32mI (107192) GAP: event: 10[0m
+[0;32mI (107202) GAP: Discovery started.[0m
+[0;32mI (107202) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (107202) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (107202) GAP: --RSSI: -36[0m
+[0;32mI (107212) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (107212) GAP: Cancel device discovery ...[0m
+[0;32mI (107222) GAP: Device discovery stopped.[0m
+[0;32mI (107222) GAP: Discover services ...[0m
+[0;32mI (107362) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (107372) GAP: --110a[0m
+[0;32mI (107372) GAP: --1105[0m
+[0;32mI (107372) GAP: --1115[0m
+[0;32mI (107372) GAP: --1116[0m
+[0;32mI (107372) GAP: --110e[0m
+[0;32mI (107382) GAP: --112f[0m
+[0;32mI (107382) GAP: --1112[0m
+[0;32mI (107382) GAP: --111f[0m
+[0;32mI (107382) GAP: --1132[0m
+[0;32mI (108202) GAP: event: 10[0m
+[0;32mI (108202) GAP: Discovery started.[0m
+[0;32mI (108412) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (108412) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (108412) GAP: --RSSI: -39[0m
+[0;32mI (108422) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (108422) GAP: Cancel device discovery ...[0m
+[0;32mI (108432) GAP: Device discovery stopped.[0m
+[0;32mI (108432) GAP: Discover services ...[0m
+[0;32mI (108592) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (108592) GAP: --110a[0m
+[0;32mI (108592) GAP: --1105[0m
+[0;32mI (108592) GAP: --1115[0m
+[0;32mI (108592) GAP: --1116[0m
+[0;32mI (108592) GAP: --110e[0m
+[0;32mI (108602) GAP: --112f[0m
+[0;32mI (108602) GAP: --1112[0m
+[0;32mI (108602) GAP: --111f[0m
+[0;32mI (108612) GAP: --1132[0m
+[0;32mI (109202) GAP: event: 10[0m
+[0;32mI (109202) GAP: Discovery started.[0m
+[0;32mI (110192) GAP: event: 10[0m
+[0;32mI (111192) GAP: event: 10[0m
+[0;32mI (112192) GAP: event: 10[0m
+[0;32mI (112332) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (112332) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (112332) GAP: --RSSI: -39[0m
+[0;32mI (112332) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (112342) GAP: Cancel device discovery ...[0m
+[0;32mI (112342) GAP: Device discovery stopped.[0m
+[0;32mI (112352) GAP: Discover services ...[0m
+[0;32mI (112352) GAP: Device discovery stopped.[0m
+[0;32mI (112362) GAP: Device discovery stopped.[0m
+[0;32mI (112532) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (112532) GAP: --110a[0m
+[0;32mI (112532) GAP: --1105[0m
+[0;32mI (112532) GAP: --1115[0m
+[0;32mI (112532) GAP: --1116[0m
+[0;32mI (112542) GAP: --110e[0m
+[0;32mI (112542) GAP: --112f[0m
+[0;32mI (112542) GAP: --1112[0m
+[0;32mI (112542) GAP: --111f[0m
+[0;32mI (112552) GAP: --1132[0m
+[0;32mI (113202) GAP: event: 10[0m
+[0;32mI (113202) GAP: Discovery started.[0m
+[0;32mI (114192) GAP: event: 10[0m
+[0;32mI (115192) GAP: event: 10[0m
+[0;32mI (116182) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (116182) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (116182) GAP: --RSSI: -35[0m
+[0;32mI (116182) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (116192) GAP: Cancel device discovery ...[0m
+[0;32mI (116202) GAP: event: 10[0m
+[0;32mI (116202) GAP: Device discovery stopped.[0m
+[0;32mI (116202) GAP: Device discovery stopped.[0m
+[0;32mI (116212) GAP: Device discovery stopped.[0m
+[0;33mW (116532) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (116602) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x16[0m
+[0;32mI (116602) GAP: event: 17[0m
+[0;32mI (117192) GAP: event: 10[0m
+[0;32mI (117202) GAP: Discovery started.[0m
+[0;32mI (117362) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (117362) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (117362) GAP: --RSSI: -41[0m
+[0;32mI (117362) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (117372) GAP: Cancel device discovery ...[0m
+[0;32mI (117382) GAP: Device discovery stopped.[0m
+[0;32mI (117382) GAP: Discover services ...[0m
+[0;32mI (118192) GAP: event: 10[0m
+[0;33mW (119052) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (119052) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (119062) GAP: event: 16[0m
+[0;32mI (

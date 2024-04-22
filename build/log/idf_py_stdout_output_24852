@@ -1,0 +1,913 @@
+ets mI (40) boot.esp32: SPI Speed      : 40M�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1172) GAP: event: 10[0m
+[0;32mI (1182) main_task: Returned from app_main()[0m
+[0;32mI (1192) GAP: Discovery started.[0m
+[0;32mI (9742) GAP: Device found: a8:43:a4:81:f1:3f[0m
+[0;32mI (9742) GAP: --Class of Device: 0x1c0424[0m
+[0;32mI (9742) GAP: --RSSI: -90[0m
+[0;32mI (9752) GAP: Found a target device, address a8:43:a4:81:f1:3f, name FPT Play 650[0m
+[0;32mI (9752) GAP: Cancel device discovery ...[0m
+[0;32mI (9762) GAP: Device discovery stopped.[0m
+[0;32mI (9762) GAP: Discover services ...[0m
+[0;33mW (14972) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (14982) GAP: event: 16[0m
+[0;33mW (15002) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1192) GAP: event: 10[0m
+[0;32mI (1202) main_task: Returned from app_main()[0m
+[0;32mI (1212) GAP: Discovery started.[0m
+[0;32mI (1362) GAP: Device found: a8:43:a4:81:f1:3f[0m
+[0;32mI (1362) GAP: --Class of Device: 0x1c0424[0m
+[0;32mI (1362) GAP: --RSSI: -97[0m
+[0;32mI (1362) GAP: Found a target device, address a8:43:a4:81:f1:3f, name [0m
+[0;32mI (1372) GAP: Cancel device discovery ...[0m
+[0;32mI (1372) GAP: Device discovery stopped.[0m
+[0;32mI (1382) GAP: Discover services ...[0m
+[0;33mW (10972) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (10972) GAP: event: 16[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1192) GAP: event: 10[0m
+[0;32mI (1202) main_task: Returned from app_main()[0m
+[0;32mI (1212) GAP: Discovery started.[0m
+[0;32mI (2052) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (2052) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (2052) GAP: --RSSI: -43[0m
+[0;32mI (2052) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (2062) GAP: Cancel device discovery ...[0m
+[0;32mI (2072) GAP: Device discovery stopped.[0m
+[0;32mI (2072) GAP: Discover services ...[0m
+[0;33mW (3372) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (3382) GAP: event: 16[0m
+[0;32mI (3642) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (3642) GAP: --110a[0m
+[0;32mI (3642) GAP: --1105[0m
+[0;32mI (3642) GAP: --1115[0m
+[0;32mI (3652) GAP: --1116[0m
+[0;32mI (3652) GAP: --110e[0m
+[0;32mI (3652) GAP: --112f[0m
+[0;32mI (3652) GAP: --1112[0m
+[0;32mI (3662) GAP: --111f[0m
+[0;32mI (3662) GAP: --1132[0m
+[0;33mW (7642) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (7792) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x16[0m
+[0;32mI (7792) GAP: event: 17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1182) GAP: event: 10[0m
+[0;32mI (1192) main_task: Returned from app_main()[0m
+[0;32mI (1202) GAP: Discovery started.[0m
+[0;32mI (2312) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (2312) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (2312) GAP: --RSSI: -41[0m
+[0;32mI (2312) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (2322) GAP: Cancel device discovery ...[0m
+[0;32mI (2322) GAP: Device discovery stopped.[0m
+[0;32mI (2332) GAP: Discover services ...[0m
+[0;33mW (3972) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (3982) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (3992) GAP: event: 16[0m
+[0;32mI (4152) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (4152) GAP: --110a[0m
+[0;32mI (4152) GAP: --1105[0m
+[0;32mI (4152) GAP: --1115[0m
+[0;32mI (4162) GAP: --1116[0m
+[0;32mI (4162) GAP: --110e[0m
+[0;32mI (4162) GAP: --112f[0m
+[0;32mI (4172) GAP: --1112[0m
+[0;32mI (4172) GAP: --111f[0m
+[0;32mI (4172) GAP: --1132[0m
+[0;33mW (8152) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (8222) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (8222) GAP: event: 17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1192) GAP: event: 10[0m
+[0;32mI (1202) main_task: Returned from app_main()[0m
+[0;32mI (1222) GAP: Discovery started.[0m
+[0;32mI (2192) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (2192) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (2192) GAP: --RSSI: -47[0m
+[0;32mI (2192) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (2202) GAP: Cancel device discovery ...[0m
+[0;32mI (2212) GAP: Device discovery stopped.[0m
+[0;32mI (2212) GAP: Discover services ...[0m
+[0;33mW (3822) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (3822) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (3832) GAP: event: 16[0m
+[0;32mI (4102) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (4102) GAP: --110a[0m
+[0;32mI (4102) GAP: --1105[0m
+[0;32mI (4102) GAP: --1115[0m
+[0;32mI (4102) GAP: --1116[0m
+[0;32mI (4112) GAP: --110e[0m
+[0;32mI (4112) GAP: --112f[0m
+[0;32mI (4112) GAP: --1112[0m
+[0;32mI (4112) GAP: --111f[0m
+[0;32mI (4122) GAP: --1132[0m
+[0;33mW (8102) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (8162) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (8162) GAP: event: 17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1172) GAP: event: 10[0m
+[0;32mI (1182) main_task: Returned from app_main()[0m
+[0;32mI (1192) GAP: Discovery started.[0m
+[0;32mI (1302) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (1302) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (1302) GAP: --RSSI: -53[0m
+[0;32mI (1302) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (1312) GAP: Cancel device discovery ...[0m
+[0;32mI (1322) GAP: Device discovery stopped.[0m
+[0;32mI (1322) GAP: Discover services ...[0m
+[0;33mW (2942) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (2952) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (2952) GAP: event: 16[0m
+[0;32mI (3162) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (3162) GAP: --110a[0m
+[0;32mI (3162) GAP: --1105[0m
+[0;32mI (3162) GAP: --1115[0m
+[0;32mI (3172) GAP: --1116[0m
+[0;32mI (3172) GAP: --110e[0m
+[0;32mI (3172) GAP: --112f[0m
+[0;32mI (3182) GAP: --1112[0m
+[0;32mI (3182) GAP: --111f[0m
+[0;32mI (3182) GAP: --1132[0m
+[0;33mW (7162) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (7242) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x16[0m
+[0;32mI (7242) GAP: event: 17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1162) GAP: event: 10[0m
+[0;32mI (1172) main_task: Returned from app_main()[0m
+[0;32mI (1182) GAP: Discovery started.[0m
+[0;32mI (1702) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (1712) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (1712) GAP: --RSSI: -51[0m
+[0;32mI (1712) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (1712) GAP: Cancel device discovery ...[0m
+[0;32mI (1722) GAP: Device discovery stopped.[0m
+[0;32mI (1722) GAP: Discover services ...[0m
+[0;33mW (3232) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (3242) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (3252) GAP: event: 16[0m
+[0;32mI (3532) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (3542) GAP: --110a[0m
+[0;32mI (3542) GAP: --1105[0m
+[0;32mI (3542) GAP: --1115[0m
+[0;32mI (3542) GAP: --1116[0m
+[0;32mI (3542) GAP: --110e[0m
+[0;32mI (3542) GAP: --112f[0m
+[0;32mI (3552) GAP: --1112[0m
+[0;32mI (3552) GAP: --111f[0m
+[0;32mI (3552) GAP: --1132[0m
+[0;33mW (7532) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (7582) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (7582) GAP: event: 17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1172) GAP: event: 10[0m
+[0;32mI (1182) main_task: Returned from app_main()[0m
+[0;32mI (1192) GAP: Discovery started.[0m
+[0;32mI (1402) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (1402) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (1402) GAP: --RSSI: -52[0m
+[0;32mI (1402) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (1412) GAP: Cancel device discovery ...[0m
+[0;32mI (1412) GAP: Device discovery stopped.[0m
+[0;32mI (1422) GAP: Discover services ...[0m
+[0;33mW (3142) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;33mW (3142) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (3152) GAP: event: 16[0m
+[0;32mI (3282) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (3282) GAP: --110a[0m
+[0;32mI (3282) GAP: --1105[0m
+[0;32mI (3282) GAP: --1115[0m
+[0;32mI (3282) GAP: --1116[0m
+[0;32mI (3282) GAP: --110e[0m
+[0;32mI (3292) GAP: --112f[0m
+[0;32mI (3292) GAP: --1112[0m
+[0;32mI (3292) GAP: --111f[0m
+[0;32mI (3292) GAP: --1132[0m
+[0;33mW (7282) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (7342) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (7342) GAP: event: 17[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1192) GAP: event: 10[0m
+[0;32mI (1202) main_task: Returned from app_main()[0m
+[0;32mI (1212) GAP: Discovery started.[0m
+[0;32mI (2082) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (2082) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (2082) GAP: --RSSI: -38[0m
+[0;32mI (2092) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (2092) GAP: Cancel device discovery ...[0m
+[0;32mI (2102) GAP: Device discovery stopped.[0m
+[0;32mI (2102) GAP: Discover services ...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1162) GAP: event: 10[0m
+[0;32mI (1172) main_task: Returned from app_main()[0m
+[0;32mI (1182) GAP: Discovery started.[0m
+[0;32mI (2182) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (2182) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (2182) GAP: --RSSI: -40[0m
+[0;32mI (2182) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (2192) GAP: Cancel device discovery ...[0m
+[0;32mI (2202) GAP: Device discovery stopped.[0m
+[0;32mI (2202) GAP: Discover services ...[0m
+[0;33mW (12692) BT_SDP: SDP - Rcvd conn cnf with error: 0x10  CID 0x40
+[0m
+[0;33mW (12692) BT_HCI: hcif conn complete: hdl 0x81, st 0x10[0m
+[0;32mI (12692) GAP: event: 16[0m
+[0;32mI (12702) GAP: Services for device b0:46:92:e1:37:c0 not found[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2024 09:52:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a884h (108676) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0002a8ac vaddr=3ffbdb60 size=0494ch ( 18764) load[0m
+[0;32mI (149) esp_image: segment 2: paddr=0002f200 vaddr=40080000 size=00e18h (  3608) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=6500ch (413708) map[0m
+[0;32mI (298) esp_image: segment 4: paddr=00095034 vaddr=40080e18 size=18184h ( 98692) load[0m
+[0;32mI (349) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (350) boot: Disabling RNG early entropy source...[0m
+[0;32mI (361) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: Pro cpu start user code[0m
+[0;32mI (370) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (370) cpu_start: Application information:[0m
+[0;32mI (373) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (378) cpu_start: App version:      1[0m
+[0;32mI (383) cpu_start: Compile time:     Apr 22 2024 09:51:46[0m
+[0;32mI (389) cpu_start: ELF file SHA256:  dc87b699b...[0m
+[0;32mI (394) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (400) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (404) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (409) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (414) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (421) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (427) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (433) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (439) heap_init: At 3FFC63C0 len 00019C40 (103 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 40098F9C len 00007064 (28 KiB): IRAM[0m
+[0;32mI (466) spi_flash: detected chip: generic[0m
+[0;32mI (469) spi_flash: flash io: dio[0m
+[0;33mW (473) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (487) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (492) main_task: Started on CPU0[0m
+[0;32mI (502) main_task: Calling app_main()[0m
+[0;32mI (542) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (542) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:4a:7e[0m
+[0;32mI (542) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1172) GAP: event: 10[0m
+[0;32mI (1172) main_task: Returned from app_main()[0m
+[0;32mI (1192) GAP: Discovery started.[0m
+[0;32mI (1382) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (1382) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (1382) GAP: --RSSI: -43[0m
+[0;32mI (1382) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (1392) GAP: Cancel device discovery ...[0m
+[0;32mI (1402) GAP: Device discovery stopped.[0m
+[0;32mI (1402) GAP: Discover services ...[0m
+[0;33mW (3352) BT_HCI: hcif conn complete: hdl 0x81, st 0x0[0m
+[0;32mI (3362) GAP: event: 16[0m
+[0;33mW (3402) BT_HCI: hcif link supv_to changed: hdl 0x81, supv_to 8000[0m
+[0;32mI (3552) GAP: Services for device b0:46:92:e1:37:c0 found[0m
+[0;32mI (3562) GAP: --110a[0m
+[0;32mI (3562) GAP: --1105[0m
+[0;32mI (3562) GAP: --1115[0m
+[0;32mI (3562) GAP: --1116[0m
+[0;32mI (3562) GAP: --110e[0m
+[0;32mI (3562) GAP: --112f[0m
+[0;32mI (3572) GAP: --1112[0m
+[0;32mI (3572) GAP: --111f[0m
+[0;32mI (3572) GAP: --1132[0m
+[0;33mW (7552) BT_HCI: hci cmd send: disconnect: hdl 0x81, rsn:0x13[0m
+[0;33mW (7632) BT_HCI: hcif disc complete: hdl 0x81, rsn 0x13[0m
+[0;32mI (7632) GAP: event: 17[0m
